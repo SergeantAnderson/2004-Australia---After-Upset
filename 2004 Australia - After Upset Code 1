@@ -1,9 +1,9 @@
 const introTitle = document.querySelector("#inner_window_1 h3");
 if (introTitle) {
-	introTitle.textContent = "Do you have what it takes to run the state?";
+	introTitle.textContent = "Do you have what it takes to win the 2004 Federal Election";
   }
 
-document.getElementById("inner_window_1").children[1].innerHTML = `<li>Can you win the 2018 South Australian Election?</li><li>Heading into the race, you'll face off against either the Incumbent Australian Labor Party or the Liberal/National Coalition, depending who you choose to play as.</li><li>The answers you choose along the Campaign Trail will affect your popularity with the public for better or for worse.</li><li>Appeal to the people across Australia to get them to put their first preference for your party.</li><li>Defy the polls and either form a Majority Government, or if not, form a strong Minority Government with Crossbench MP's</li>`;
+document.getElementById("inner_window_1").children[1].innerHTML = `<li>Can you win the 2004 Australian Federal Election?</li><li>Heading into the race, you'll face off against either the Incumbent Australian Labor Party or the Liberal/National Coalition in Opposition, depending who you choose to play as.</li><li>The answers you choose along the Campaign Trail will affect your popularity with the public for better or for worse.</li><li>Appeal to the people across Australia to get them to put their first preference for your party.</li><li>Defy the polls and either form a Majority Government, or if not, form a strong Minority Government with Crossbench MP's</li>`;
 document.styleSheets[0].insertRule(".inner_window_w_desc{ margin:1em 0 0 0.5em !important;padding-top: 0.5em !important;}", 0);
 document.styleSheets[0].insertRule(".inner_window_question{ margin:1em 0 .7em 0.5em !important;padding-top: 0.3em !important;}", 0);
 document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}", 0);
@@ -19,7 +19,7 @@ quotes = [
 ]
 
 selQuote = quotes[Math.round(Math.random()*(quotes.length - 1))]
-corrr = `<h2>The 2018 South Australian Election</h2><font id="wittyquote" size="4" color="white"><em>` + selQuote + `</em></font>`
+corrr = `<h2>Australia Chooses - 2004</h2><font id="wittyquote" size="4" color="white"><em>` + selQuote + `</em></font>`
 $("#theme_picker")[0].style.display = "none"
 $("#bottomBar")[0].style.display = "none"
 
@@ -99,7 +99,7 @@ campaignTrail_temp.temp_election_list = [
         "id": 20,
         "year": 2016,
         "is_premium": 0,
-        "display_year": "2004 Australia - Right Thing to Do"
+        "display_year": "2004 Australia - After Upset"
     }
 ]
 
@@ -141,11 +141,11 @@ campaignTrail_temp.candidate_json = [
             "party": "",
             "state": "",
             "priority": 1,
-            "description": "<p>The Australian Labor Party came into power after defeating the incumebt Howard Liberal Government in the 2001 election, having upset the nation and taking over in a small, but maintainable majority Government. Over the past 3 years, much has been made with ALP policy, both on a domestic scale and internationally, with intervention now in Afghanistan in the U.S. lead War on Terror.</p><p>Despite the Government's strong record, a series of small scandals and broken promises may lead to the party's defeat with just 3 years in Government. The party will need to remain united and put forth their domestic policies to the nation once more to demonstrate they are the capable party to lead.</p>",
+            "description": "<p>The Australian Labor Party came into power after defeating the incumebt Howard Liberal Government in the 2001 election, having upset the nation and taking over in a small, but maintainable majority Government. Over the past 3 years, much has been made with ALP policy, both on a domestic scale and internationally, with intervention now in Afghanistan in the U.S. lead War on Terror.</p><p>Domestically, the Government has seen some small wins across the board and a strong international standing despite the party's internal conflict with the War on Terror. With the Government's strong record, a series of small scandals and broken promises may lead to the party's defeat with just 3 years in Government. The party will need to remain united and put forth their domestic policies to the nation once more to demonstrate they are the capable party to lead.</p>",
             "color_hex": "#853f3f",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "",
+            "image_url": "https://i.imgur.com/tyrkrWp.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -172,7 +172,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>Kim Beazley serves as the 26th Prime Minister of Australia, having been swept into power in the 2001 Election with a small majority Government to work with. Beazley has seem much domestic policy overhaul in his first term, reversing course from the previous Howard Government</p>",
+            "description_as_running_mate": "<p>Kim Beazley serves as the 26th Prime Minister of Australia, having been swept into power in the 2001 Election with a small majority Government to work with, ousting John Howard out of the lodge. Beazley has seem much domestic policy overhaul in his first term, reversing course from the previous Howard Government and some international support from allies with Australia's small involvement in the War on Terror.</p><p>With the on-going Middle East conflict and Australia's limited intervention in the war is seeing ankles being snapped by both some within the party and the Liberal Opposition, pitting Beazley into a potential corner. Despite a on-going, yet somewhat sucessful domestic policy, this will be marked by current global events across the world.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -187,11 +187,11 @@ campaignTrail_temp.candidate_json = [
             "party": "",
             "state": "",
             "priority": 1,
-            "description": "<p></p>",
+            "description": "<p>Having lost the 2001 Election in an upset, the Liberal/National Coalition returns to Opposition with Peter Costello at the helm of the major party, with a new brand of conservatism to officially brand itself to win Government in 2004. The bitter defeat in the 2001 poll saw much self-internal reflection and for the party to take a new approach in order to win Government once more.</p>Electorally, the party has seen some gains in state and local elections in Queensland, New South Wales, with a Loss in South Australia. Yet this doesn't deter the party to enact its revenge to topple Beazley with just 3 years under the Prime Ministers belt. With the global War on Terror in full force, the Coalition needs to prove itself dignified on both a domestic level, and on international issues.</p>",
             "color_hex": "#30396d",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "",
+            "image_url": "https://i.imgur.com/gq90EO2.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -218,7 +218,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p></p>",
+            "description_as_running_mate": "<p>A reveared Treasurer and Deputy Leader now turned the Opposition Leader, Peter Costello holds the reigns of the Coalition after John Howards resignation of the party after the 2001 Election. Peter Costello </p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -266,10 +266,10 @@ campaignTrail_temp.opponents_weighted_json = [
 ]
 
 jet_data = {
-    "headerColor": "#cfb783",
+    "headerColor": "#dfdfdf",
     "windowColor": "#a8abd7",
     "containerColor": "#acb7c5",
-    "innerWindowColor": "#3d406c",
+    "innerWindowColor": "#9b9b9b",
     "bannerImageUrl": "https://jetsimon.com/public/placeholderbanner.png",
     "backgroundImageUrl": "https://thepropertytribune.com.au/wp-content/uploads/2021/06/adelaide-skyline.jpg",
     "endingTextColor": "#000000",
@@ -277,13 +277,13 @@ jet_data = {
 
 //#startcode
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#cfb783";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#3d406c";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#dfdfdf";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#595963";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$(".container")[0].style.backgroundColor = "#be5b5b";
-document.getElementById("header").src = "https://jetsimon.com/public/placeholderbanner.png";
-document.body.background = "https://thepropertytribune.com.au/wp-content/uploads/2021/06/adelaide-skyline.jpg";
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#3d406c!important;}</style>";
+$(".container")[0].style.backgroundColor = "#9b9b9b";
+document.getElementById("header").src = "https://i.imgur.com/GJFt9tx.png";
+document.body.background = "https://t4.ftcdn.net/jpg/03/13/99/15/360_F_313991528_xkWq6AjZIkRu21XCF1jDqRFDx9v93M7r.jpg";
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#9b9b9b!important;}</style>";
 
 //#endcode
